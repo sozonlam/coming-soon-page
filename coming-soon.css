@@ -1,0 +1,143 @@
+@font-face {
+    font-family: 'AdiHaus';
+    src: URL('https://assets.codepen.io/6060109/adihaus_regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "AdiHaus";
+    src: url("https://assets.codepen.io/6060109/adihaus_bold.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+}
+
+body,
+html {
+    min-width: 100%;
+    min-height: 100vh;
+    margin: 0;
+    font-family: AdiHaus;
+}
+
+body {
+    display: flex;
+}
+
+.all-container {
+    max-width: 450px;
+    margin: 0 auto;
+}
+
+#logo {
+    margin: 15px auto;
+    display: block;
+}
+
+#athlete-mobile {
+    background: #ffffff url("https://assets.codepen.io/6060109/athlete-girl.png") no-repeat right top;
+    background-size: cover;
+    width: 100%;
+    height: 200px;
+}
+
+.all-content-container {
+    padding: 20px 30px;
+}
+
+.text-container {
+    width: 100%;
+    text-align: center;
+}
+
+h2,
+p {
+    margin: 0;
+}
+
+h2 {
+    font-size: 48px;
+    line-height: 42px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+h2.red {
+    color: #CD3A24;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+h2.black {
+    color: #423A3A;
+    line-height: 50px;
+}
+
+p {
+    line-height: 28px;
+    color: #333333;
+    margin: 20px 0 40px;
+}
+
+form {
+    display: flex;
+}
+
+input[type="text"] {
+    width: 75%;
+    padding: 0 20px;
+    height: 50px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    width: 20%;
+    height: 50px;
+    box-sizing: border-box;
+    background-color: #423A3A;
+    font-size: 700;
+    color: white;
+    font-size: 16px;
+}
+
+.desktop-image {
+    display: none;
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    body {
+        background: url('https://assets.codepen.io/6060109/destop-bg.png');
+        background-size: cover;
+    }
+
+    .all-container {
+        width: 50%;
+    }
+
+    .text-container {
+        text-align: left;
+    }
+
+    #logo {
+        margin: 30px 30px 100px;
+        display: block;
+    }
+
+    #athlete-mobile {
+        display: none;
+    }
+
+    .desktop-image {
+        display: block;
+        width: 50%;
+        background-image: url('https://assets.codepen.io/6060109/athlete-big.png');
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 35% 99%);
+        background-size: cover;
+    }
+
+    h2 {
+        font-size: 64px;
+    }
+
+}
